@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+ <!-- Start -->
+ <category>
+ <pattern>START</pattern>
+ <template>
+ Hello! I'm your Career Path Bot.<br/><br/>
+ Let's find out which tech role suits you best.<br/><br/>
+ Do you enjoy writing code or creating software?<br/>
+ <button><text>Yes</text><postback>LOVE CODING</postback></button>
+ <button><text>No</text><postback>NOT CODING</postback></button>
+ </template>
+ </category>
+
+ <!-- Love coding: go to Software Developer -->
+ <category>
+ <pattern>LOVE CODING</pattern>
+ <template>
+ Sounds like you enjoy building solutions with code.<br/>
+ You might be great as a <b>Software Developer</b>!<br/>
+ <a href="https://www.wgu.edu/career-guide/information-technology/software-developer-career.html" target="_blank">Learn More</a><br/><br/>
+ Would you like to explore more career paths?<br/>
+ <button><text>Yes</text><postback>MORE OPTIONS</postback></button>
+ <button><text>No</text><postback>EXIT</postback></button>
+ </template>
+ </category>
+
+ <!-- Not coding? -->
+ <category>
+ <pattern>NOT CODING</pattern>
+ <template>
+ Do you like designing web pages or visual content for websites?<br/>
+ <button><text>Yes</text><postback>WEB DESIGN</postback></button>
+ <button><text>No</text><postback>NO WEB DESIGN</postback></button>
+ </template>
+ </category>
+
+ <!-- Web Developer path -->
+ <category>
+ <pattern>WEB DESIGN</pattern>
+ <template>
+ You may enjoy being a <b>Web Developer</b>!<br/>
+ This role focuses on creating websites and improving user experiences.<br/>
+ <a href="https://www.wgu.edu/career-guide/information-technology/web-developer-career.html" target="_blank">Learn More</a><br/><br/>
+ See more options?<br/>
+ <button><text>Yes</text><postback>MORE OPTIONS</postback></button>
+ <button><text>No</text><postback>EXIT</postback></button>
+ </template>
+ </category>
+
+ <!-- Ask about data interest -->
+ <category>
+ <pattern>NO WEB DESIGN</pattern>
+ <template>
+ Are you interested in analyzing data to find patterns and insights?<br/>
+ <button><text>Yes</text><postback>LOVE DATA</postback></button>
+ <button><text>No</text><postback>NO DATA</postback></button>
+ </template>
+ </category>
+
+ <!-- Data Scientist -->
+ <category>
+ <pattern>LOVE DATA</pattern>
+ <template>
+ A <b>Data Scientist</b> might be a great fit for you!<br/>
+ They solve problems by interpreting complex datasets.<br/>
+ <a href="https://www.wgu.edu/career-guide/information-technology/data-scientist-career.html" target="_blank">Learn More</a><br/><br/>
+ Want to see another suggestion?<br/>
+ <button><text>Yes</text><postback>MORE OPTIONS</postback></button>
+ <button><text>No</text><postback>EXIT</postback></button>
+ </template>
+ </category>
+
+ <!-- Ask about managing structured information -->
+ <category>
+ <pattern>NO DATA</pattern>
+ <template>
+ Do you enjoy organizing and managing large sets of structured data?<br/>
+ <button><text>Yes</text><postback>LOVE DATABASES</postback></button>
+ <button><text>No</text><postback>NO DATABASES</postback></button>
+ </template>
+ </category>
+
+ <!-- Database Admin -->
+ <category>
+ <pattern>LOVE DATABASES</pattern>
+ <template>
+ A <b>Database Administrator</b> could be a good fit!<br/>
+ DBAs keep data secure, organized, and available.<br/>
+ <a href="https://www.wgu.edu/career-guide/information-technology/database-administrator-career.html" target="_blank">Learn More</a><br/><br/>
+ Would you like to restart the quiz?<br/>
+ <button><text>Yes</text><postback>START</postback></button>
+ <button><text>No</text><postback>EXIT</postback></button>
+ </template>
+ </category>
+
+ <!-- Ask about networks -->
+ <category>
+ <pattern>NO DATABASES</pattern>
+ <template>
+ Are you interested in building and maintaining computer networks?<br/>
+ <button><text>Yes</text><postback>NETWORK ENGINEER</postback></button>
+ <button><text>No</text><postback>NO INTEREST</postback></button>
+ </template>
+ </category>
+
+ <!-- Network Engineer -->
+ <category>
+ <pattern>NETWORK ENGINEER</pattern>
+ <template>
+ You might enjoy being a <b>Network Engineer</b>!<br/>
+ This career focuses on ensuring systems stay connected and secure.<br/>
+ <a href="https://www.wgu.edu/career-guide/information-technology/network-engineer-career.html" target="_blank">Learn More</a><br/><br/>
+ Try again from the beginning?<br/>
+ <button><text>Yes</text><postback>START</postback></button>
+ <button><text>No</text><postback>EXIT</postback></button>
+ </template>
+ </category>
+
+ <!-- If no interests -->
+ <category>
+ <pattern>NO INTEREST</pattern>
+ <template>
+ No worries! Tech has many roles beyond these examples.<br/>
+ <a href="https://www.wgu.edu/blog/popular-computer-careers2203.html" target="_blank">Explore More IT Careers</a><br/><br/>
+ Restart the career bot?<br/>
+ <button><text>Yes</text><postback>START</postback></button>
+ <button><text>No</text><postback>EXIT</postback></button>
+ </template>
+ </category>
+
+ <!-- Looping back for more -->
+ <category>
+ <pattern>MORE OPTIONS</pattern>
+ <template>
+ Let's continue exploring!<br/><br/>
+ Are you curious about any of these?<br/>
+ <button><text>Software Developer</text><postback>LOVE CODING</postback></button>
+ <button><text>Web Developer</text><postback>WEB DESIGN</postback></button>
+ <button><text>Data Scientist</text><postback>LOVE DATA</postback></button>
+ <button><text>Database Admin</text><postback>LOVE DATABASES</postback></button>
+ <button><text>Network Engineer</text><postback>NETWORK ENGINEER</postback></button>
+ </template>
+ </category>
+
+ <!-- Exit -->
+ <category>
+ <pattern>EXIT</pattern>
+ <template>
+ Thanks for exploring your career path with this bot!<br/>
+ Best of luck in your tech journey!
+ </template>
+ </category>
+
+ <!-- Fallback -->
+ <category>
+ <pattern>*</pattern>
+ <template>
+ Not sure what you meant.<br/>
+ Type <b>start</b> to begin the career quiz.
+ </template>
+ </category>
+
+</aiml>
