@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
+<aiml version="2.0">
+<!--
+  TITLE: Career Path Chatbot - UDC and Greeting
+  COURSE: C951 Intro to Artificial Intelligence
+  AUTHOR: Kakada Ly, WGU# 009275226
+-->
+
+<!-- Catch-All: Unknown Input -->
+<category>
+  <pattern>HELLO</pattern>
+  <template>
+    👋 Hello! Ready to explore your career path?<br/><br/>
+    <button>
+      <text>Yes, let’s start!</text>
+      <postback>QUIZ</postback>
+    </button>
+    <button>
+      <text>No, maybe later.</text>
+      <postback>EXIT</postback>
+    </button>
+  </template>
+</category>
+
+<category>
+  <pattern>QUIZ</pattern>
+  <template>
+    🚀 Great! Let’s begin the career quiz.<br/>
+    First question: Do you enjoy coding?<br/>
+    <button><text>Yes</text><postback>LOVE CODING</postback></button>
+    <button><text>No</text><postback>NOT CODING</postback></button>
+  </template>
+</category>
 </aiml>

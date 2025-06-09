@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+<!--
+  TITLE: Career Path Chatbot - career path
+  COURSE: C951 Intro to Artificial Intelligence
+  AUTHOR: Kakada Ly, WGU# 009275226
+-->
 
  <!-- Start -->
  <category>
@@ -18,7 +23,7 @@
  <pattern>LOVE CODING</pattern>
  <template>
  Sounds like you enjoy building solutions with code.<br/>
- You might be great as a <b>Software Developer</b>!<br/>
+ You might be great as a <b>Software Developer</b><br/>
  <a href="https://www.wgu.edu/career-guide/information-technology/software-developer-career.html" target="_blank">Learn More</a><br/><br/>
  Would you like to explore more career paths?<br/>
  <button><text>Yes</text><postback>MORE OPTIONS</postback></button>
@@ -40,7 +45,7 @@
  <category>
  <pattern>WEB DESIGN</pattern>
  <template>
- You may enjoy being a <b>Web Developer</b>!<br/>
+ You may enjoy being a <b>Web Developer</b><br/>
  This role focuses on creating websites and improving user experiences.<br/>
  <a href="https://www.wgu.edu/career-guide/information-technology/web-developer-career.html" target="_blank">Learn More</a><br/><br/>
  See more options?<br/>
@@ -63,7 +68,7 @@
  <category>
  <pattern>LOVE DATA</pattern>
  <template>
- A <b>Data Scientist</b> might be a great fit for you!<br/>
+ <b>Data Scientist</b> might be a great fit for you!<br/>
  They solve problems by interpreting complex datasets.<br/>
  <a href="https://www.wgu.edu/career-guide/information-technology/data-scientist-career.html" target="_blank">Learn More</a><br/><br/>
  Want to see another suggestion?<br/>
@@ -86,7 +91,7 @@
  <category>
  <pattern>LOVE DATABASES</pattern>
  <template>
- A <b>Database Administrator</b> could be a good fit!<br/>
+ <b>Database Administrator</b> could be a good fit!<br/>
  DBAs keep data secure, organized, and available.<br/>
  <a href="https://www.wgu.edu/career-guide/information-technology/database-administrator-career.html" target="_blank">Learn More</a><br/><br/>
  Would you like to restart the quiz?<br/>
@@ -109,7 +114,7 @@
  <category>
  <pattern>NETWORK ENGINEER</pattern>
  <template>
- You might enjoy being a <b>Network Engineer</b>!<br/>
+ You might enjoy being a <b>Network Engineer</b><br/>
  This career focuses on ensuring systems stay connected and secure.<br/>
  <a href="https://www.wgu.edu/career-guide/information-technology/network-engineer-career.html" target="_blank">Learn More</a><br/><br/>
  Try again from the beginning?<br/>
