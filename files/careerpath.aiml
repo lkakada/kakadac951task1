@@ -93,7 +93,7 @@
  <template>
  <b>Database Administrator</b> could be a good fit!<br/>
  DBAs keep data secure, organized, and available.<br/>
- <a href="https://www.wgu.edu/career-guide/information-technology/database-administrator-career.html" target="_blank">Learn More</a><br/><br/>
+ <a href="https://www.wgu.edu/career-guide/information-technology/data-admin-career.html" target="_blank">Learn More</a><br/><br/>
  Would you like to restart the quiz?<br/>
  <button><text>Yes</text><postback>START</postback></button>
  <button><text>No</text><postback>EXIT</postback></button>
